@@ -21,7 +21,7 @@ def index2(request):
 def login(request):
     email=request.POST.get('email')
     password = request.POST.get('password')
-    if password=="abcd" and email=="abcd@gmail":
+    if password=="abcd1234" and email=="abcd@gmail.com":
         return complaint_view(request)
     else:
         return render(request, "app1/login.html")
